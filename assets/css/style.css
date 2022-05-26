@@ -1,0 +1,7 @@
+:root{/* это корень html грубо говоря бади. внего мы вкалдуем все переменные что будут использоваться в проэкте  */
+    --border-radius:10px;
+    --color-dark:#dbdbdb;
+    --color-norm:#ececec;
+    --color-light:#f3f3f3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
