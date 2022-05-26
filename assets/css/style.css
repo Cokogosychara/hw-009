@@ -77,5 +77,7 @@ tfoot th:last-child{    /* обращаемся к последней ячейк
 }
 tfoot button{    /* обращаюсь ко всем кнопкам которые находяться к блоку tfood */
     padding: 10px 30px;    /*  задаю внутрений оступ */
-    background-color: var(--color-dark);/* задаю фоновый цвет кнопке */
+    border-color:  rgb(123, 117, 117);
+    border: 1px solid #b29c9c;
+    background-color:rgb(175 165 165);/* задаю фоновый цвет кнопке */
 }
