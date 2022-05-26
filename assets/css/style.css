@@ -4,4 +4,78 @@
     --color-norm:#ececec;
     --color-light:#f3f3f3;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
+}
+table{/* обращение к кантейнеру таблици */
+    width: 100%;   /* ширина 100% считаеться от мак вис */
+    max-width: 900px;/* максимальная штрина */
+    margin: auto;    /* автозаволнение марджен */
+    border-collapse: collapse;    /* убераем отступы между ячейками  */
+}
+th,
+td{    /* обращаемся ко всем dt которые находяться в th */
+    padding: 10px ;/* задали паденги */
+}
+thead{    /* обращение к верхнему блоку thead */
+    color: var(--color-light);    /* цвет букв белого цвета */
+}
+thead th:first-child{    /* обращение к верхнему левому блоку  */
+    border-top-left-radius : var(--border-radius);/* задали радиус верхнего левого угла  */
+    background-color: #7887ab     /* цает фона */
+}
+thead th:nth-child(2){    /* обращение к 2 блоку, который находиться в theader */
+    background-color: #4f628e;/* цает фона */
+}
+thead th:nth-child(3){   /* обращение к 3 блоку, который находиться в theader */
+    background-color: rgb(28, 53, 106);/* цает фона */
+}
+thead th:nth-child(4){   /* обращение к 4 блоку, который находиться в theader */
+    background-color:rgb(13, 36, 87);/* цает фона */
+}
+thead th:last-child{    /* обращаемся к последнему блоку th находится в thead  */
+    border-top-right-radius: var(--border-radius);/* задаем верхний правый border-radius */
+    background-color: #061539;/* цвет фона */
+}
+thead p{    /* обращение ко всем Р в блоке theader */
+    font-size: 1em;    /* задал относительный размер слов в блоке thead */
+    margin: 0;/* убераем марджены которые установленные по умолчанию */
+}
+thead p:nth-child(2){    /* обращаемся ко всем 2м (Р) которые находяться в блоке thead  */
+   font-size: 2em;/* Задаем относительный размер */
+   padding-top: 1.2em;/* верхний отступ */
+}
+thead p:nth-child(3){    /* обращение к 3й (Р) которая находиться в блоке thead */
+    padding-top: 0.8em;    /* задаем верхний отступ */
+ }
+tbody tr:nth-child(odd) td:nth-child(odd),
+tfoot th:nth-child(odd){    /* обращаемся не четным блокам tr и их не четным ячекам th, и нечетным ячекам td, которые пренадлежат блоку tfoot  */
+    background-color: var(--color-dark);/* задаем цвет фона */
+}
+tbody tr:nth-child(odd) td:nth-child(even),
+tbody tr:nth-child(even) td:nth-child(odd),
+tfoot th:nth-child(even){/*  обращаемся не четным блокам tr и их четным ячекам td, и четным блокас tr и их нечетным блокам td, которые пренадлежат блоку thead */
+    /* за одно добавляем ячейки других блоков которым необходим иакой же фоновы цвет */
+    
+    background-color:var(--color-norm);
+}
+tbody tr:nth-child(even) td:nth-child(even){    /* обращаемся к четным блокам tr и четным ячейкам td которые относяться к блоку thead */
+    background-color: var(--color-light);/* задаем фон */
+}
+tbody td:not(td:first-child){    /* обращаемся ко всем ячейкам  td, кроме  первые  td которые находятся в блоке tbody*/
+    width: 17%;/* задаем ширину в процентном соотношении */
+    text-align: center;/* выставляем контент по центру */
+
+}
+tbody td:first-child{    /* обращаемся к первым ячекам td которые находяться в блоке tbody */
+    padding-left: 2.5em;    /* задаем отступ с левой стороны  в относительном размере  */
+
+}
+tfoot th:first-child{    /* обращаемся к первой ячейке которая находиться в блоке tfoot */
+    border-bottom-left-radius: var(--border-radius);    /* задаем радиус ячейке которая находиться первая в блоке tfoot */
+}
+tfoot th:last-child{    /* обращаемся к последней ячейке блока tfood */
+    border-bottom-right-radius: var(--border-radius);    /* задаем радиус нижнему правому углу последней ячейки */
+}
+tfoot button{    /* обращаюсь ко всем кнопкам которые находяться к блоку tfood */
+    padding: 10px 30px;    /*  задаю внутрений оступ */
+    background-color: var(--color-dark);/* задаю фоновый цвет кнопке */
+}
